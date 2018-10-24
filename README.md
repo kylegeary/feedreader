@@ -8,5 +8,5 @@ A feedreader web application with unit tests written in Jasmine.
 * Open `index.html` in your preferred web browser
 
 ## Live demo and addtional information
-* See the feedreader Jasmine tests in action [here](https://kylegeary.github.io/feedreader/)
+* See this feedreader and Jasmine unit tests in action [here](https://kylegeary.github.io/feedreader/)
 * More information on Jasmine can be found [here](https://jasmine.github.io/)
