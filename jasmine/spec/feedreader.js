@@ -50,6 +50,9 @@ $(function() {
 
             menu.click();
             expect(body.classList.contains('menu-hidden')).toBe(false);
+
+            menu.click();
+            expect(body.classList.contains('menu-hidden')).toBe(true);
         });
     });
 
@@ -60,8 +63,9 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, done);
         });
-        it('completes work', function(){
-            expect($('.entry .feed')).toBeDefined();
+        it('has at least one entry element in the feed container', function(){
+            let numOfEntries = $('.entry').length;
+            expect(numOfEntries).toBeGreaterThan(0);
         });
     });
 
