@@ -64,8 +64,9 @@ $(function() {
             loadFeed(0, done);
         });
         it('has at least one entry element in the feed container', function(){
-            let numOfEntries = $('.entry').length;
-            expect(numOfEntries).toBeGreaterThan(0);
+            let entries = document.querySelectorAll('.feed .entry');
+            expect(entries).toBeDefined();
+            expect(entries.length).toBeGreaterThan(0);
         });
     });
 
